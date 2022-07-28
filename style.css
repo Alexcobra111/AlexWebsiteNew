@@ -1,0 +1,593 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 微软雅黑,Poppins, sans-serif;
+    font-size: 1rem;
+    
+}
+
+body {
+    position: relative;
+    background: #ebeeee;
+    /* width: 100vw;
+    height: 100vh; */
+    
+    /* background: linear-gradient(
+            135deg, 
+            rgba(200, 250, 223, 0.5) 0, rgba(155, 241, 194, 0.5) 25%, transparent 25%, transparent 50%, 
+            rgba(176, 240, 205, 0.5) 50%, rgba(169, 238, 200, 0.5) 75%, transparent 75%, transparent
+        );
+    background-size: 4px 4px; */
+}
+
+a {
+    text-decoration: none;
+}
+
+a:link {
+    color: inherit;
+}
+
+a:visited {
+    color: inherit;
+}
+
+a:hover {
+    color: #f44336;
+}
+
+a:active {
+    color: rgb(8, 189, 90);
+}
+h1{
+    font-size: 2.2rem;
+    font-weight: 600;
+}
+h3{
+    text-align: center;
+    font-weight: 600;
+    margin: 10px 0;
+}
+
+p{
+    color: rgb(83, 83, 83);
+    font-size: 0.875rem;
+    font-weight: 300;
+    line-height: 1.57;
+    padding: 10px;
+}
+.header{
+    min-height: 100vh;
+    width: 100%;
+    background-image: linear-gradient(rgba(4,9,30,0.7),rgba(4,9,30,0.7)), url(images/seattledawn.jpg);
+    background-position: center;
+    background-size: cover;
+    position: relative;
+    margin-bottom: 5vh;
+}
+
+
+nav{
+    display: flex;
+    padding: 2% 6%;
+    justify-content: space-between;
+    align-items: center;
+}
+nav img{
+    width: 150px;
+    cursor: pointer;
+}
+.nav-links{
+    flex: 1;
+    text-align: right;
+}
+
+.nav-links ul li{
+    list-style: none;
+    display: inline-block;
+    padding: 8px 12px;
+    position: relative;
+}
+.nav-links ul li a{
+    color: #fff;
+    text-decoration: none;
+    font-size: 0.8125rem;
+    vertical-align: middle;
+}
+
+.nav-links ul li a span {
+    font-size: 2rem;
+}
+
+/*导航文字下指示条*/
+.nav-links ul li::after{
+    content: '';
+    width: 0%;
+    height: 2px;
+    background: #f44336;
+    display: block;
+    margin: auto;
+    transition: 0.5s;
+}
+
+/*导航下文字指示条鼠标停留显示*/
+.nav-links ul li:hover::after{
+    width: 100%;
+}
+.text-box{
+    width:90%;
+    color: #fff;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    text-align: center;
+}
+.text-box h1{
+    font-size: 4rem;
+    margin-bottom: 1rem;
+}
+.text-box p{
+    margin: 10px 0 40px;
+    font-size: 14px;
+    color: #fff;
+}
+
+/*hero-btn 样式*/
+.hero-btn{
+    display: inline-block;
+    text-decoration: none;
+    color: #fff;
+    border: 1px solid #fff;
+    padding: 12px 34px;
+    font-size: 0.9rem;
+    background: transparent;
+    position: relative;
+    cursor: pointer;
+}
+.hero-btn:hover{
+    color: white;
+    border: 1px solid #f44336;
+    background:#f44336 ;
+    transition: 1s;
+
+}
+
+nav .fa{
+    display: none;
+}
+
+@media(max-width:768px){
+    .text-box h1{
+        font-size: 20px;
+    }
+    .nav-links ul li{
+        display: block;
+    }
+    .nav-links{
+        position: absolute;
+        background: #f44336; 
+        height: 100vh;
+        width: 200px;
+        top: 0;
+        right: -200px;
+        text-align: left;
+        z-index: 2;
+        transition: 1s;
+    }
+    nav .fa{
+        display: block;
+        color: #fff;
+        margin: 10px;
+        font-size: 22px;
+        cursor: pointer;
+    }
+    .nav-links ul{
+        padding: 30px;
+    }
+}
+
+
+/*----------- part1 -------------*/
+.part1 {
+    width: 80%;
+    margin: auto;
+    text-align: center;
+    padding-top: 100px;
+    
+}
+
+
+.row{
+    margin-top: 5%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.part1-col {
+    flex-basis: 31%;
+    background: #f5eded;
+    border-radius: 10px;
+    margin-bottom: 5%;
+    padding: 20px 12px;
+    box-sizing: border-box;
+    transition: 0.5s;
+}
+
+.part1-col p {
+    text-align: left;
+}
+.part1-col:hover {
+    box-shadow: 0 0 25px 0px rgba(0,0,0,0.4);
+}
+@media(max-width:768px){
+    .row{
+        flex-direction: column;
+    }
+}
+
+/*------------- part2 ------------*/
+
+.part2{
+    width: 80%;
+    margin: auto;
+    text-align: center;
+    padding-top: 50px;
+}
+.part2-col{
+    flex-basis: 32%;
+    height: 70vh;
+    border-radius: 10px;
+    margin-bottom: 30px;
+    position: relative;
+    overflow: hidden;
+}
+.part2 h1 {
+    margin-bottom: 1rem;
+}
+.part2-col img{
+    width: 100%;
+    display: block;
+}
+
+.layer{
+    background: transparent;
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    transition: 0.5s;
+}
+.layer:hover{
+    background: rgba(226,0,0,0.7);
+}
+.layer h3{
+    width: 100%;
+    font-weight: 500;
+    color: #fff;
+    font-size: 30px;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    position: absolute;
+    opacity: 0;
+    transition: 0.5s ;
+}
+.layer:hover h3{
+    bottom: 49%;
+    opacity: 1;
+}
+
+/*----------part3-----------*/
+.part3 {
+    width: 80%;
+    margin: auto;
+    text-align: center;
+    padding-top: 100px;
+}
+.part3 h1 {
+    margin-bottom: 1rem;
+}
+.part3-col {
+    flex-basis: 31%;
+    border-radius: 10px;
+    margin-bottom: 5%;
+    text-align: left;
+}
+.part3-col img {
+    width: 100%;
+    border-radius: 10px;
+}
+.part3-col p {
+    padding: 0;
+}
+.part3-col h3 {
+    margin-top: 16px;
+    margin-bottom: 15px;
+    text-align: left;
+}
+
+/*---------part5---------*/
+.part5 {
+    width: 80%;
+    margin: auto;
+    padding-top: 100px;
+    text-align: center;
+}
+
+.part5-col {
+    flex-basis: 44%;
+    border-radius: 10px;
+    margin-bottom: 5%;
+    text-align: left;
+    background: #d8d8d8;
+    padding: 25px;
+    cursor: pointer;
+    display: flex;
+    transition: transform 0.5s cubic-bezier(0.4, 0, 0.2, 1);
+}
+.part5-col:hover {
+    transform: scale(1.02);
+}
+.part5-col img {
+    height: 50px;
+    margin-left: 5px;
+    margin-right: 30px;
+    border-radius: 50%;
+}
+.part5-col p {
+    padding: 0;
+    margin-top: 5px;
+}
+.part5-col h3 {
+    margin-top: 15px;
+    text-align: left;
+}
+.part5-col .fa {
+    color: #f44336;
+
+}
+@media(max-width: 768px){
+    .part5-col img {
+        margin-left: 0px;
+        margin-right: 15px;     
+    }
+}
+
+/*----------- call to action -----------*/
+.cta{
+    margin: 100px auto;
+    width: 80%;
+    background-image: linear-gradient(rgba(0,0,0,0.6),rgba(0,0,0,0.6)),url(pic/banner2.jpg);
+    background-position: center;
+    background-size: cover;
+    border-radius: 30px;
+    text-align: center;
+    padding: 100px 0;
+}
+.cta h1{
+    color: #fff;
+    margin-bottom: 40px;
+    
+}
+.cta .hero-btn {
+    color: white;
+}
+
+@media(max-width:768px){
+    .cta h1{
+        font-size: 1.5rem;
+    }
+}
+
+/*-----------footer-------------*/
+.footer{
+    width: 100%;
+    text-align: center;
+    padding:30px 0;
+}
+
+.footer h4{
+    margin-bottom: 20px;
+    margin-top: 20px;
+    font-weight: 600;
+}
+.icons .fa{
+    color: #f44336;
+    margin: 0 13px;
+    cursor: pointer;
+    padding: 18px 0;
+}
+.fa-heart{
+    color: #f44336;
+}
+
+
+/*-----------part4-------------*/
+.part4 {
+    margin-top: 8rem;
+    text-align: center;
+    
+}
+.part4-title {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.part4-title::after {
+    content: '';
+    width: 0%;
+    height: 2px;
+    display: block;
+    background-color: black;
+    margin-bottom: 5.5rem;
+    transition: 0.8s;
+}
+.part4-title:hover::after {
+    width: 70%;
+}
+
+.part4-title h2 {
+    font-size: 4rem;
+    color: red;
+    margin-bottom: 1.2rem;
+}
+.part4-title p {
+    width: 60vw;
+    margin-bottom: 0.5rem;
+    font-weight: bold;
+    font-size: 1rem;
+    line-height: 1.4;
+}
+
+.card-grid {
+    margin-top: 3rem;
+    display: grid;
+    place-items: center;
+    gap: 3.2rem;
+    width: 75%;
+    grid-template-columns: repeat(3,1fr);
+    margin: auto;
+
+}
+@media (max-width:768px) {
+    .card-grid {
+        grid-template-columns: 1fr;
+        width: 86%;
+    }
+}
+
+@media (min-width:768px) and (max-width:1200px){
+    .card-grid {
+        grid-template-columns: 1fr 1fr;
+        gap: 1.5rem;
+        width: 90%;
+    }
+}
+
+@media (min-width:1201px){
+    .card-grid {
+        grid-template-columns: 1fr 1fr 1fr;
+        width: 86%;
+    }
+}
+
+
+.card {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    box-sizing: border-box;
+    background-color: #e3e5e5;
+    padding: 1.5rem;
+    transition: all 0.4s ease;
+}
+.card-picture {
+    display: flex;
+    margin-bottom: 2.8rem;
+    align-items: flex-start;
+}
+.card-picture img{
+    aspect-ratio: 16/9;
+    position: absolute;
+    top: 2rem;
+    left: 1.8rem;
+    /* height: 24vh; */
+    width: 22vw;
+    object-fit: cover;
+    object-position: center;
+    transition: transform 500ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.card-title {
+    margin-top: 10rem;
+    text-align: start;
+    margin-bottom: 0.6rem;
+}
+
+.card-title h2 {
+    margin-left: 0.5rem;
+    font-family: Playfair Display;
+    font-weight: 500;
+    display: inline-block;
+    font-size: 2rem;
+}
+
+.card-article {
+    text-align: start;
+    
+}
+
+.card-article p {
+    font-size: 0.95rem;
+    line-height: 1.6;
+    font-weight: 500;
+    color: black;
+    width: calc(1fr - 2rem);
+    margin-bottom: 5rem;
+}
+
+.card-cta {
+    display: flex;
+    align-items: center;
+    margin-right: 1rem;
+    position: absolute;
+    bottom: 1.4rem;
+}
+
+.card-cta-icon {
+    display: flex;
+    background-color: #888895;
+    color: white;
+    padding: 0.4rem;
+    margin-right: 1rem;
+    border-radius: 50%;
+    transition: all 0.5s ease;
+}
+
+.cta-text h3 {
+    justify-content: start;
+    font-size: 0.875rem;
+    text-align: start;
+    font-weight: 600;
+    align-items: flex-start;
+}
+
+.card:hover {
+    background-color: rgb(255, 255, 255);
+    color: inherit;
+}
+.card:hover .card-picture img {
+    transform: scale(1.05);
+}
+.card-title h2::after {
+    display: block;
+    content: "";
+    width: 0;
+    height: 0.15rem;
+    background-color: black;
+    margin: auto;
+    transition: 0.5s;
+}
+.card:hover .card-title h2::after {
+    width: 100%;
+}
+.card:hover .card-cta-icon {
+    background-color: black;
+}
+
+.scroll-up {
+    position: absolute;
+    background-color: #838396;
+    padding: 1rem;
+    border-radius: 50%;
+    color: white;
+    right: 2rem;
+    bottom: 5rem;
+    
+}
+.scroll-up span {
+    font-size: 2rem;
+}

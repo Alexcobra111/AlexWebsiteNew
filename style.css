@@ -441,6 +441,12 @@ nav .fa{
     font-size: 1rem;
     line-height: 1.4;
 }
+@media (max-width:768px) {
+    .part4-title h2{
+        font-size: 5vh;
+    }
+}
+
 
 .card-grid {
     margin-top: 3rem;

@@ -513,6 +513,14 @@ nav .fa{
         width:60vw;
     }
 }
+@media (min-width:768px) and (max-width:1200px){
+    .card-picture img {
+        height: 25vh;
+        width: 35vw;
+        object-fit: cover;
+        object-position: center;
+    }
+}
 
 .card-title {
     margin-top: 10rem;

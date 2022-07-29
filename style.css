@@ -459,6 +459,9 @@ nav .fa{
     margin: auto;
 
 }
+
+/* media query for grid layout */
+
 @media (max-width:768px) {
     .card-grid {
         grid-template-columns: 1fr;
@@ -508,6 +511,8 @@ nav .fa{
     transition: transform 500ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
+/* media query for card picture */
+
 @media (max-width:768px) {
     .card-picture img {
         width:60vw;
@@ -517,6 +522,14 @@ nav .fa{
     .card-picture img {
         height: 25vh;
         width: 35vw;
+        object-fit: cover;
+        object-position: center;
+    }
+}
+@media (min-width:1201px){
+    .card-picture img {
+        height: 25vh;
+        width: 22vw;
         object-fit: cover;
         object-position: center;
     }

@@ -1,6 +1,6 @@
 :root {
     box-sizing: border-box;
-    
+    font-family: Playfair Display;
 }
 
 * {
@@ -74,6 +74,12 @@ header .header-menu li a::after {
 {
     width: 102%;
 }
+@media (max-width:768px) {
+    header {
+        height: 7vh;
+    }
+}
+
 
 
 .banner {
@@ -89,6 +95,16 @@ header .header-menu li a::after {
     top: 9vh;
     height: calc(60vh + 5rem);
     z-index: 10;
+}
+
+@media (max-width:768px) {
+    .banner {
+        top:7vh;
+    }
+    #bannerBg {
+        top: 7vh;
+        height: calc(30vh + 5rem);
+    }
 }
 
 .title {

@@ -18,7 +18,7 @@ body {
             rgba(200, 250, 223, 0.5) 0, rgba(155, 241, 194, 0.5) 25%, transparent 25%, transparent 50%, 
             rgba(176, 240, 205, 0.5) 50%, rgba(169, 238, 200, 0.5) 75%, transparent 75%, transparent
         );
-    background-size: 4px 4px; */
+    background-size: 6px 6px; */
 }
 
 a {
@@ -60,10 +60,10 @@ p{
 .header{
     min-height: 100vh;
     width: 100%;
-    background: linear-gradient(rgba(4,9,30,0.7),rgba(4,9,30,0.7)), url("https://img.gejiba.com/images/d7a101fb954d21df0865f1ab13bbf0ee.jpg");
+    background: linear-gradient(rgba(4,9,30,0.7),rgba(4,9,30,0.7)), url("https://img.gejiba.com/images/6f4fb361de5fcb1a87beda9340b568c4.jpg");
     background-position: center;
     background-size: cover;
-    overflow-x:hidden;
+    overflow-x: hidden;
     position: relative;
     margin-bottom: 5vh;
 }
@@ -131,7 +131,7 @@ nav img{
 }
 .text-box p{
     margin: 10px 0 40px;
-    font-size: 0.875rem;
+    font-size: 14px;
     color: #fff;
 }
 
@@ -181,12 +181,13 @@ nav .fa{
         display: block;
         color: #fff;
         margin: 10px;
-        font-size: 1.375rem;
+        font-size: 22px;
         cursor: pointer;
     }
     .nav-links ul{
         padding: 30px;
     }
+
 }
 
 
@@ -319,7 +320,7 @@ nav .fa{
 }
 
 .part5-col {
-    flex-basis: 44%;
+    flex-basis: 42%;
     border-radius: 10px;
     margin-bottom: 5%;
     text-align: left;
@@ -363,6 +364,7 @@ nav .fa{
     }
 }
 
+
 /*----------- call to action -----------*/
 .cta{
     margin: 100px auto;
@@ -388,6 +390,9 @@ nav .fa{
         font-size: 1.5rem;
     }
 }
+
+
+
 
 /*-----------footer-------------*/
 .footer{
@@ -466,9 +471,6 @@ nav .fa{
     margin: auto;
 
 }
-
-/* media query for grid layout */
-
 @media (max-width:768px) {
     .card-grid {
         grid-template-columns: 1fr;
@@ -503,12 +505,15 @@ nav .fa{
 }
 .card-picture {
     display: flex;
-    margin-bottom: 2.8rem;
+    margin-bottom: 2rem;
+    padding-right: 0.5rem;
     align-items: flex-start;
+    width: 22vw;
+    object-fit: cover;
+    object-position: center;
 }
 .card-picture img{
-    aspect-ratio: 16/9;
-    position: absolute;
+    /* aspect-ratio: 16/9; */
     top: 2rem;
     left: 1.8rem;
     /* height: 24vh; */
@@ -518,13 +523,14 @@ nav .fa{
     transition: transform 500ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-/* media query for card picture */
-
 @media (max-width:768px) {
     .card-picture img {
-        width:60vw;
+       
+        width: 60vw;
+        
     }
 }
+
 @media (min-width:768px) and (max-width:1200px){
     .card-picture img {
         height: 25vh;
@@ -533,6 +539,7 @@ nav .fa{
         object-position: center;
     }
 }
+
 @media (min-width:1201px){
     .card-picture img {
         height: 25vh;
@@ -542,8 +549,10 @@ nav .fa{
     }
 }
 
+
 .card-title {
-    margin-top: 10rem;
+    display: block;
+    margin-top: 1.2rem;
     text-align: start;
     margin-bottom: 0.6rem;
 }

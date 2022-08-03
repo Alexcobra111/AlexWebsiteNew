@@ -1,6 +1,5 @@
 :root {
     box-sizing: border-box;
-    
 }
 
 * {
@@ -127,24 +126,25 @@ main {
     width: 90%;
     margin: 3rem auto;
     gap: 2rem;
+    
     justify-content: center;
     align-items: flex-start;
 }
 aside {
     display: flex;
     position: sticky;
-    top: 2rem;
+    top: 5rem;
     width: 15%;
     justify-content: end;
-    /* background: lightblue; */
-    margin-top: 0;
-    padding-top: 2rem;
+    background: lightblue;
+    margin-top: 4rem;
 }
 aside ul {
     list-style: none;
 }
 aside li {
-    margin-top: 1.5rem;
+    margin-top: 0;
+    margin-bottom: 1.5rem;
 }
 aside ul a{
     text-decoration: none;
@@ -163,11 +163,16 @@ section {
 	max-width: 45em;
 	margin: 0 3rem;
 	padding: 4em 0; 
-	text-align: justify;
+    text-align: justify;
 }
+
 section p {
     font-size: 1.1rem;
     font-weight: 300;
+}
+section a {
+    color: #0e82a5;
+    font-weight: 500;
 }
 section img {
 	width: 100%;
@@ -180,7 +185,7 @@ section img {
     --offset:200px;
     position: sticky;
     bottom: 50px;
-    left: 93%;
+    left: 92%;
     margin-right: 10px; 
     place-self: end;
     margin-top: calc(100vh + var(--offset));

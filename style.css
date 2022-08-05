@@ -57,7 +57,8 @@ p{
     line-height: 1.57;
     padding: 10px;
 }
-.header{
+
+/* .header{
     min-height: 100vh;
     width: 100%;
     background: linear-gradient(rgba(4,9,30,0.7),rgba(4,9,30,0.7)), url("https://img.gejiba.com/images/6f4fb361de5fcb1a87beda9340b568c4.jpg");
@@ -66,7 +67,21 @@ p{
     overflow-x: hidden;
     position: relative;
     margin-bottom: 5vh;
+} */
+
+.header {
+    min-height: 100vh;
+    width: 100%;
+    background: linear-gradient(rgba(4,9,30,0.7),rgba(4,9,30,0.7)), url("https://img.gejiba.com/images/d7a101fb954d21df0865f1ab13bbf0ee.jpg");
+    background-position: center;
+    background-size: cover;
+    overflow-x: hidden;
+    position: relative;
+    margin-bottom: 5vh;
+
 }
+
+
 
 
 nav{
@@ -450,6 +465,8 @@ nav .fa{
 .part4-title p {
     width: 60vw;
     margin-bottom: 0.5rem;
+    text-align: justify;
+    word-spacing: nowrap;
     font-weight: bold;
     font-size: 1rem;
     line-height: 1.4;
@@ -559,7 +576,7 @@ nav .fa{
 
 .card-title h2 {
     margin-left: 0.5rem;
-    font-family: Playfair Display;
+    font-family: 方正小标宋简体,Playfair Display;
     font-weight: 500;
     display: inline-block;
     font-size: 2rem;
@@ -575,6 +592,8 @@ nav .fa{
     line-height: 1.6;
     font-weight: 500;
     color: black;
+    text-align: start;
+    word-spacing: nowrap;
     width: calc(1fr - 2rem);
     margin-bottom: 5rem;
 }

@@ -1,18 +1,15 @@
 *{
     margin: 0;
     padding: 0;
-    font-family: 微软雅黑,Poppins, sans-serif;
+    font-family: Poppins,Source han sans, sans-serif;
     font-size: 1rem;
-    
 }
 
 body {
     position: relative;
     background: #ebeeee;
     overflow-x: hidden;
-    /* width: 100vw;
-    height: 100vh; */
-    
+
     /* background: linear-gradient(
             135deg, 
             rgba(200, 250, 223, 0.5) 0, rgba(155, 241, 194, 0.5) 25%, transparent 25%, transparent 50%, 
@@ -463,13 +460,13 @@ nav .fa{
     margin-bottom: 1.2rem;
 }
 .part4-title p {
-    width: 60vw;
+    width: 65vw;
     margin-bottom: 0.5rem;
     text-align: justify;
     word-spacing: nowrap;
     font-weight: bold;
     font-size: 1rem;
-    line-height: 1.4;
+    line-height: 1.6;
 }
 @media (max-width:768px) {
     .part4-title h2{
@@ -493,6 +490,7 @@ nav .fa{
         grid-template-columns: 1fr;
         width: 86%;
     }
+    
 }
 
 @media (min-width:768px) and (max-width:1200px){
@@ -501,6 +499,10 @@ nav .fa{
         gap: 1.5rem;
         width: 90%;
     }
+   .card-article p {
+        height: 20vh;
+        overflow-y: hidden;
+   }
 }
 
 @media (min-width:1201px){
@@ -508,12 +510,17 @@ nav .fa{
         grid-template-columns: 1fr 1fr 1fr;
         width: 86%;
     }
+    .card-article p {
+        height: 23vh;
+        overflow-y: hidden;
+   }
 }
 
 
 .card {
     display: flex;
     flex-direction: column;
+    height: 80vh;
     position: relative;
     box-sizing: border-box;
     background-color: #e3e5e5;
@@ -541,20 +548,26 @@ nav .fa{
 }
 
 @media (max-width:768px) {
-    .card-picture img {
-       
-        width: 60vw;
-        
+    .card {
+        height: 80vh;
     }
+    .card-picture img {
+        width: 55vw;
+    }
+    
 }
 
 @media (min-width:768px) and (max-width:1200px){
     .card-picture img {
-        height: 25vh;
+        height: 30vh;
         width: 35vw;
         object-fit: cover;
         object-position: center;
     }
+    .card {
+        height: 80vh;
+    }
+    
 }
 
 @media (min-width:1201px){
@@ -564,6 +577,10 @@ nav .fa{
         object-fit: cover;
         object-position: center;
     }
+    .card {
+        height: 80vh;
+    }
+    
 }
 
 
@@ -575,11 +592,11 @@ nav .fa{
 }
 
 .card-title h2 {
-    margin-left: 0.5rem;
+    margin-left: 1.1rem;
     font-family: 方正小标宋简体,Playfair Display;
     font-weight: 500;
     display: inline-block;
-    font-size: 2rem;
+    font-size: 1.85rem;
 }
 
 .card-article {
@@ -592,10 +609,10 @@ nav .fa{
     line-height: 1.6;
     font-weight: 500;
     color: black;
-    text-align: start;
+    text-align: justify;
     word-spacing: nowrap;
     width: calc(1fr - 2rem);
-    margin-bottom: 5rem;
+    padding: .5rem 1.2rem;
 }
 
 .card-cta {
@@ -603,7 +620,8 @@ nav .fa{
     align-items: center;
     margin-right: 1rem;
     position: absolute;
-    bottom: 1.4rem;
+    bottom: 1.2rem;
+    
 }
 
 .card-cta-icon {
@@ -618,6 +636,7 @@ nav .fa{
 
 .cta-text h3 {
     justify-content: start;
+    font-family: 微软雅黑;
     font-size: 0.875rem;
     text-align: start;
     font-weight: 600;
@@ -635,7 +654,7 @@ nav .fa{
     display: block;
     content: "";
     width: 0;
-    height: 0.15rem;
+    height: 0.2rem;
     background-color: black;
     margin: auto;
     transition: 0.5s;

@@ -9,7 +9,6 @@ body {
     position: relative;
     background: #ebeeee;
     overflow-x: hidden;
-
     /* background: linear-gradient(
             135deg, 
             rgba(200, 250, 223, 0.5) 0, rgba(155, 241, 194, 0.5) 25%, transparent 25%, transparent 50%, 
@@ -83,14 +82,27 @@ p{
 
 nav{
     display: flex;
-    padding: 2% 6%;
+    padding: 2% 5%;
     justify-content: space-between;
     align-items: center;
 }
-nav img{
-    width: 150px;
-    cursor: pointer;
+nav .header-logo {
+    display: flex;
+    gap: .8rem;
+    align-items: center;
 }
+nav img{
+    height: 5.8vh;
+    cursor: pointer;
+    display: inline-block;
+}
+nav h2 {
+    display: inline-block;
+    color: white;
+    font-size: 1.8rem;
+    font-weight: 600;
+}
+
 .nav-links{
     flex: 1;
     text-align: right;
@@ -105,12 +117,13 @@ nav img{
 .nav-links ul li a{
     color: #fff;
     text-decoration: none;
-    font-size: 0.8125rem;
+    font-size: 1rem;
     vertical-align: middle;
 }
 
 .nav-links ul li a span {
-    font-size: 2rem;
+    font-size: 2.2rem;
+    vertical-align: baseline;
 }
 
 /*导航文字下指示条*/
@@ -275,7 +288,7 @@ nav .fa{
     transition: 0.5s;
 }
 .layer:hover{
-    background: rgba(226,0,0,0.7);
+    background: rgba(0,0,0,0.7);
 }
 .layer h3{
     width: 100%;
@@ -290,7 +303,7 @@ nav .fa{
     transition: 0.5s ;
 }
 .layer:hover h3{
-    bottom: 49%;
+    bottom: 45%;
     opacity: 1;
 }
 
@@ -380,13 +393,13 @@ nav .fa{
 /*----------- call to action -----------*/
 .cta{
     margin: 100px auto;
-    width: 80%;
+    width: 85%;
     background-image: linear-gradient(rgba(0,0,0,0.6),rgba(0,0,0,0.6)),url("https://img.gejiba.com/images/bbe15cb6a33dc93a22cd7f2d97c85592.jpg");
     background-position: center;
     background-size: cover;
     border-radius: 30px;
     text-align: center;
-    padding: 100px 0;
+    padding: 60px 0;
 }
 .cta h1{
     color: #fff;
@@ -433,7 +446,7 @@ nav .fa{
 .part4 {
     margin-top: 8rem;
     text-align: center;
-    
+    margin-bottom: 8rem;
 }
 .part4-title {
     display: flex;
@@ -666,16 +679,4 @@ nav .fa{
     background-color: black;
 }
 
-.scroll-up {
-    position: absolute;
-    background-color: #838396;
-    padding: 1rem;
-    border-radius: 50%;
-    color: white;
-    right: 2rem;
-    bottom: 5rem;
-    
-}
-.scroll-up span {
-    font-size: 2rem;
-}
+

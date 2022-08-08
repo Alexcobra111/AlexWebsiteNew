@@ -74,9 +74,9 @@ p{
     overflow-x: hidden;
     position: relative;
     margin-bottom: 5vh;
-    animation: change 30s infinite ease-in-out;
+/*     animation: change 30s infinite ease-in-out; */
 }
-@keyframes change{
+/* @keyframes change{
     0%
     {
         background: linear-gradient(rgba(4,9,30,0.7),rgba(4,9,30,0.7)), url("https://img.gejiba.com/images/d7a101fb954d21df0865f1ab13bbf0ee.jpg");
@@ -113,7 +113,7 @@ p{
         background-position: center;
         background-size: cover;
     }
-}
+} */
 
 
 

@@ -74,17 +74,57 @@ p{
     overflow-x: hidden;
     position: relative;
     margin-bottom: 5vh;
-
+    animation: change 30s infinite ease-in-out;
 }
-
+@keyframes change{
+    0%
+    {
+        background: linear-gradient(rgba(4,9,30,0.7),rgba(4,9,30,0.7)), url("https://img.gejiba.com/images/d7a101fb954d21df0865f1ab13bbf0ee.jpg");
+        background-position: center;
+        background-size: cover;
+    }
+    20%
+    {
+        background: linear-gradient(rgba(4,9,30,0.7),rgba(4,9,30,0.7)), url("https://img.gejiba.com/images/dbd99c3b9c73dcb6c605ae8f0fa1de0f.jpg");
+        background-position: center;
+        background-size: cover;
+    }
+    40%
+    {
+        background: linear-gradient(rgba(4,9,30,0.7),rgba(4,9,30,0.7)), url("https://img.gejiba.com/images/9d4ec1d9f9e141a731ccfce46d546e5b.png");
+        background-position: center;
+        background-size: cover;
+    }
+    60%
+    {
+        background: linear-gradient(rgba(4,9,30,0.7),rgba(4,9,30,0.7)), url("https://img.gejiba.com/images/d569eb35542005c0494b1535276f7eae.jpg");
+        background-position: center;
+        background-size: cover;
+    }
+    80%
+    {
+        background: linear-gradient(rgba(4,9,30,0.7),rgba(4,9,30,0.7)), url("https://img.gejiba.com/images/6f4fb361de5fcb1a87beda9340b568c4.jpg");
+        background-position: center;
+        background-size: cover;
+    }
+    100%
+    {
+        background: linear-gradient(rgba(4,9,30,0.7),rgba(4,9,30,0.7)), url("https://img.gejiba.com/images/6f4fb361de5fcb1a87beda9340b568c4.jpg");
+        background-position: center;
+        background-size: cover;
+    }
+}
 
 
 
 nav{
     display: flex;
     padding: 2% 5%;
-    justify-content: space-between;
+    justify-content: space-around;
     align-items: center;
+    /* position: fixed; */
+    z-index: 10;
+    transition: 200ms ease-in-out;
 }
 nav .header-logo {
     display: flex;
@@ -151,12 +191,12 @@ nav h2 {
     text-align: center;
 }
 .text-box h1{
-    font-size: 4rem;
-    margin-bottom: 1rem;
+    font-size: 5rem;
+    margin-bottom: 1.5rem;
 }
 .text-box p{
     margin: 10px 0 40px;
-    font-size: 14px;
+    font-size: 1rem;
     color: #fff;
 }
 

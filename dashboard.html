@@ -1,0 +1,326 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Resiponsive Dashboard</title>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Symbols+Sharp"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Sharp:opsz,wght,FILL,GRAD@48,500,1,0" />
+    <! link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
+    <link rel="stylesheet" href="./dashboard-style.css">
+        
+</head>
+<body>
+        <div class="container">
+                <aside>
+                    <div class="top">
+                        <div class="logo">
+                            <img src="./pic/vs.png">
+                            <h2><span class="blue">VS</span>CODE</h2>
+                        </div>
+                        <div class="close " id="close-btn">
+                            <span class="material-symbols-sharp">close</span>
+                        </div>
+                    </div>
+
+                    <div class="sidebar">
+                        <a href="#">
+                        <span class="material-symbols-sharp">grid_view</span>
+                        <h3>仪表盘</h3>
+                        </a>
+                        <a href="#" class="active">
+                        <span class="material-symbols-sharp">account_circle</span>
+                        <h3>用户列表</h3>
+                        </a>
+                        <a href="#">
+                        <span class="material-symbols-sharp">receipt_long</span>
+                        <h3>订单管理</h3>
+                        </a>
+                        <a href="#">
+                        <span class="material-symbols-sharp">insights</span>
+                        <h3>数据分析</h3>
+                        </a>
+                        <a href="#">
+                        <span class="material-symbols-sharp">mail</span>
+                        <h3>消息中心</h3>
+                        <span class="message-count">26</span>
+                        </a>
+                        <a href="#">
+                        <span class="material-symbols-sharp">inventory</span>
+                        <h3>产品列表</h3>
+                        </a>
+                        <a href="#">
+                        <span class="material-symbols-sharp">report_gmailerrorred</span>
+                        <h3>订单报告</h3>
+                        </a>
+                        <a href="#">
+                        <span class="material-symbols-sharp">settings</span>
+                        <h3>设置中心</h3>
+                        </a>
+                        <a href="#">
+                        <span class="material-symbols-sharp">add</span>
+                        <h3>添加功能</h3>
+                        </a>
+                        <a href="#">
+                        <span class="material-symbols-sharp">logout</span>
+                        <h3>退出登录</h3>
+                        </a>
+                    </div>
+
+                </aside>
+                <!------------End Of Aside-------------->
+                    <main>
+                        <h1></h1>
+                        <div class="date">
+                            <input type="date">
+                        </div>
+
+                        <div class="insight">
+                            <div class="sales">
+                                <span class="material-symbols-sharp"> analytics</span>
+                                <div class="middle">
+                                    <div class="left">
+                                        <h3>销售量</h3>
+                                        <h1>25,024</h1>
+                                    </div>
+                                    <div class="progress">
+                                            <svg>
+                                                    <circle cx="38" cy="38" r="36"></circle>
+                                            </svg>
+                                            <div class="number">
+                                                <p>81%</p>
+                                            </div>
+                                </div>
+                            </div>
+                                <small class="text-muted">Last  24  hours</small>
+                        </div>
+                            <!--------------End of Sales--------------->
+                            <div class="expenses">
+                                <span class="material-symbols-sharp"> bar_chart</span>
+                                <div class="middle">
+                                    <div class="left">
+                                        <h3>订单数</h3>
+                                        <h1>14,160</h1>
+                                    </div>
+                                    <div class="progress">
+                                            <svg>
+                                                    <circle cx="38" cy="38" r="36"></circle>
+                                            </svg>
+                                            <div class="number">
+                                                <p>81%</p>
+                                            </div>
+                                    </div>
+                                </div>
+                                <small class="text-muted">Last  24  hours</small>
+                            </div>
+                            <!--------------End of Expenses--------------->
+                            <div class="income">
+                                <span class="material-symbols-sharp"> stacked_line_chart</span>
+                                <div class="middle">
+                                    <div class="left">
+                                        <h3>总收入</h3>
+                                        <h1>￥10,896</h1>
+                                    </div>
+                                    <div class="progress">
+                                            <svg>
+                                                    <circle cx="38" cy="38" r="36"></circle>
+                                            </svg>
+                                            <div class="number">
+                                                <p>44%</p>
+                                            </div>
+                                    </div>
+                                </div>
+                                <small class="text-muted">Last  24  hours</small>
+                            </div>
+                            <!--------------End of Income--------------->
+                        </div>
+
+                        <!----------------Recent-Orders---------------->
+                            <div class="recent-orders">
+                                <h2>订单管理</h2>
+                                <table>
+                                    <thead>
+                                        <tr>
+                                            <th>产品名称</th>
+                                            <th>产品编号</th>
+                                            <th>支付状态</th>
+                                            <th>订单状态</th>
+                                            <th></th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        
+                                        <tr>
+                                                <td>Foldable Mini Drone</td>
+                                                <td>85631</td>
+                                                <td>已支付</td>
+                                                <td class="warning">运送中</td>
+                                                <td class="primary">订单详情</td>
+                                        </tr>
+                                        
+                                        <tr>
+                                                <td>Foldable Mini Drone</td>
+                                                <td>85631</td>
+                                                <td>已支付</td>
+                                                <td class="success">已送达</td>
+                                                <td class="primary">订单详情</td>
+                                        </tr>
+                                        
+                                        <tr>
+                                                <td>Foldable Mini Drone</td>
+                                                <td>85631</td>
+                                                <td>未支付</td>
+                                                <td class="warning">-</td>
+                                                <td class="primary">订单详情</td>
+                                        </tr>
+                                        
+                                        <tr>
+                                                <td>Foldable Mini Drone</td>
+                                                <td>85631</td>
+                                                <td>未支付</td>
+                                                <td class="warning">-</td>
+                                                <td class="primary">订单详情</td>
+                                        </tr>
+                                        
+                                        <tr>
+                                                <td>Foldable Mini Drone</td>
+                                                <td>85631</td>
+                                                <td>已支付</td>
+                                                <td class="success">已送达</td>
+                                                <td class="primary">订单详情</td>
+                                        </tr>
+                                        
+                                        <tr>
+                                                <td>Foldable Mini Drone</td>
+                                                <td>85631</td>
+                                                <td>已支付</td>
+                                                <td class="warning">运送中</td>
+                                                <td class="primary">订单详情</td>
+                                        </tr>
+
+                                    </tbody>
+                                </table>
+                                <a href="#">显示全部</a>
+                            </div>
+                    </main>
+                    <!--------------------End of Main---------------------->
+
+                    <div class="right">
+                            <div class="top">
+                                    <button id="menu-btn">
+                                        <span class="material-symbols-sharp">menu</span>
+                                    </button>
+                                    <div class="theme-toggler">
+                                        <span class="material-symbols-sharp active">light_mode </span>
+                                        <span class="material-symbols-sharp">dark_mode</span>
+                                    </div>
+                                    <div class="profile">
+                                            <div class="info">
+                                                <p>你好, <b>Alex</p>
+                                                    <small class="text-muted">管理员</small>
+                                            </div>
+                                            <div class="profile-photo">
+                                                <img src="./pic/photo1.jpg">
+                                            </div>
+                                    </div>
+                            </div>
+                            <!----------------End of Top----------------->
+                            <div class="recent-updates">
+                                    <h2>订单状态</h2>
+                                    <div class="updates">
+                                            <div class="update">
+                                                    <div class="profile-photo">
+                                                        <img src="./pic/photo2.jpg">
+                                                    </div>
+                                                    <div class="message">
+                                                        <p>
+                                                            <b class="customer-name">张三</b> <span class="primary">12345678</span> 号订单已签收。
+                                                        </p>
+                                                        <small class="text-muted">2 Minutes Ago</small>
+                                                    </div>
+                                            </div>
+                                            <div class="update">
+                                                    <div class="profile-photo">
+                                                        <img src="./pic/photo3.jpg">
+                                                    </div>
+                                                    <div class="message">
+                                                        <p>
+                                                            <b class="customer-name">李四</b> <span class="primary">12345678</span> 号订单已签收。
+                                                        </p>
+                                                        <small class="text-muted">2 Minutes Ago</small>
+                                                    </div>
+                                            </div>
+                                            <div class="update">
+                                                    <div class="profile-photo">
+                                                        <img src="./pic/photo4.jpg">
+                                                    </div>
+                                                    <div class="message">
+                                                        <p>
+                                                            <b class="customer-name">王五</b> <span class="primary">12345678</span> 号订单已签收。
+                                                        </p>
+                                                        <small class="text-muted">2 Minutes Ago</small>
+                                                    </div>
+                                            </div>
+                                            
+                                    </div>
+                            </div>
+
+                            <!-------------End of Recent Updates------------->
+                            <div class="sales-analytics">
+                                <h2>
+                                    销售分析
+                                </h2>
+                                <div class="item online">
+                                    <div class="icon">
+                                        <span class="material-symbols-sharp">shopping_cart </span>
+                                    </div>
+                                <div class="right">
+                                    <div class="info">
+                                        <h3>线上订单</h3>
+                                        <small class="text-muted">Last 24 Hours</small>
+                                    </div>
+                                    <h5 class="success">+39%</h5>
+                                    <h3>3849</h3>
+                                </div>
+                            </div>
+                                <div class="item offline">
+                                    <div class="icon">
+                                        <span class="material-symbols-sharp">local_mall </span>
+                                    </div>
+                                <div class="right">
+                                    <div class="info">
+                                        <h3>经销商订单</h3>
+                                        <small class="text-muted">Last 24 Hours</small>
+                                    </div>
+                                    <h5 class="danger">-17%</h5>
+                                    <h3>1100</h3>
+                                </div>
+                            </div>
+                                <div class="item customers">
+                                    <div class="icon">
+                                    <span class="material-symbols-sharp">person </span>
+                                    </div>
+                                <div class="right">
+                                    <div class="info">
+                                        <h3>新增顾客</h3>
+                                        <small class="text-muted">Last 24 Hours</small>
+                                    </div>
+                                    <h5 class="success">+25%</h5>
+                                    <h3>849</h3>
+                                </div>
+                            </div>
+                            <div class="item add-product">
+                                    <div>
+                                        <span class="material-symbols-sharp">add </span>
+                                        <h3>Add Product</h3>
+                                    </div>
+                            </div>
+                        </div>
+        </div>
+
+        <script src="./index.js"></script>
+        <script src="./orders.js"></script>
+</body>
+</html>
